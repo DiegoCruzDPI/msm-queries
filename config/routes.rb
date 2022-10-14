@@ -13,6 +13,10 @@ Rails.application.routes.draw do
 
   get("/movies",{ :controller =>"movies", :action => "movie_index"})
 
+  #actor routes
+  get("/actors/:oof_id",{ :controller => "actors", :action => "actor_details"})
+
+  get("/actors",{ :controller =>"actors", :action => "actor_index"})
 
   #homepage
   get("/", { :controller => "application", :action => "homepage" })
